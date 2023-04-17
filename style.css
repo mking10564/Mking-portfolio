@@ -1,0 +1,65 @@
+/* Font family styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #f7c873;
+}
+
+/* Font color styles */
+h4 {
+  color: #f7c873;
+}
+
+li {
+  color: #ddd;
+}
+
+p {
+  color: #ddd;
+}
+
+.nav-link {
+  color: #ddd;
+}
+
+.nav-link:hover {
+  color: #f7c873;
+}
+
+/* Visited link color */
+a:visited {
+  color: #a0a0a0;
+}
+
+/* Divs with custom positions and styles */
+.custom-div-1 {
+  background-color: #fb7550;
+  padding: 20px;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-div-2 {
+  background-color: #c353ff;
+  padding: 20px;
+  position: relative;
+  right: 10px;
+  top: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-div-3 {
+  background-color: #50edcb;
+  padding: 20px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  margin-bottom: 20px;
+}
+  

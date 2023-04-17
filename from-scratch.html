@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>From Scratch Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">From Scratch</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Back to Professional Pages</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+  <h2 class="mb-5">From Scratch Page</h2>
+
+  <!-- Ordered list with unordered list -->
+  <ol>
+    <li>Lionel Messi</li>
+    <li>
+      Best Ever: Why?
+      <ul>
+        <li>7 Ballon d'Or</li>
+        <li>World Cup Champion</li>
+      </ul>
+    </li>
+    <li>Way better than Ronaldo</li>
+  </ol>
+  
+  <img src="https://www.clipartmax.com/png/middle/135-1350876_trophy-gallery-world-cup-trophy-silhouette.png" alt="World Cup Trophy" style="width: 100%; max-width: 500px;">
+
+  <!-- Embedded YouTube video -->
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V1SJGmgX67A" allowfullscreen></iframe>
+  </div>
+
+  <!-- On-page anchor -->
+  <h3 id="anchor">On-page anchor example</h3>
+  <p><a href="#anchor">Click here to go to the on-page anchor</a></p>
+
+  <!-- Custom divs -->
+  <h4>Custom Divs:</h4>
+  <div class="custom-div-1">Custom Div 1</div>
+  <div class="custom-div-2">Custom Div 2</div>
+  <div class="custom-div-3">Custom Div 3</div>
+
+  <!-- Embedded Tableau graph -->
+  <div id="tableauViz" style="width: 100%; height: 800px;"></div>
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <script>
+    function initViz() {
+      var containerDiv = document.getElementById("tableauViz");
+      var url = "https://public.tableau.com/views/SoccerPowerIndex/SoccerPowerIndex?:language=en-US&:display_count=n&:origin=viz_share_link";
+      var options = {
+        width: containerDiv.offsetWidth,
+        height: containerDiv.offsetHeight,
+        hideTabs: true,
+        onFirstInteractive: function() {
+          console.log("Tableau graph is loaded and interactive");
+        }
+      };
+      var viz = new tableau.Viz(containerDiv, url, options);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      initViz();
+    });
+  </script>
+
+</div>
+
+</body>
+</html>
+
